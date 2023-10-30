@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pure-black: #000;
+  --pure-whote: #fff;
+  --light-grey: #dfdfdf;
+
+  --accent-gradient: linear-gradient(
+    90deg,
+    rgb(255, 197, 147),
+    rgb(188, 113, 152),
+    rgb(90, 119, 255)
+  );
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2;
+  text-transform: uppercase;
+}
+
+button {
+  font: inherit;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2;
+  text-transform: uppercase;
+}
