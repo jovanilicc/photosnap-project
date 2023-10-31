@@ -1,16 +1,20 @@
-html {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html {
+  background-color: var(--light-grey);
+}
+
 :root {
   --pure-black: #000;
-  --pure-whote: #fff;
+  --pure-white: #fff;
   --light-grey: #dfdfdf;
 
   --accent-gradient: linear-gradient(
-    90deg,
+    0deg,
     rgb(255, 197, 147),
     rgb(188, 113, 152),
     rgb(90, 119, 255)
@@ -23,6 +27,9 @@ body {
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0;
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--pure-white);
 }
 
 h1 {
@@ -56,6 +63,15 @@ h4 {
   text-transform: uppercase;
 }
 
+a {
+  color: var(--pure-black);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 button {
   font: inherit;
   font-weight: 700;
@@ -63,4 +79,90 @@ button {
   line-height: 16px;
   letter-spacing: 2;
   text-transform: uppercase;
+}
+
+.nav-bar button {
+  background-color: var(--pure-black);
+  border: 1px solid var(--pure-black);
+  color: var(--pure-white);
+  padding: 0.75em 1.5em;
+}
+
+.nav-bar button:hover {
+  background-color: var(--light-grey);
+  color: var(--pure-black);
+  border-color: var(--light-grey);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4.5rem;
+}
+
+#photosnap-logo {
+  display: flex;
+  align-items: center;
+}
+#photosnap-logo a {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  gap: 2.3125rem;
+  justify-content: space-evenly;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--light-grey);
+}
+
+.first-section {
+  display: flex;
+}
+
+.first-section > .bg-color {
+  background-color: var(--pure-black);
+  width: 43%;
+  padding: 10.8125rem 0;
+  color: var(--pure-white);
+}
+
+.first-section .black-background {
+  padding: 0 7rem;
+  position: relative;
+}
+
+.first-section .black-background::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 6px;
+  background-image: var(--accent-gradient);
+  top: 0;
+  left: 0;
+}
+
+.first-section > .bg-images {
+  background-image: url(./assets/photo-of-protographer-on-deck.png);
+  object-fit: fill;
+  width: 57%;
 }
