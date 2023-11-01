@@ -87,7 +87,7 @@ button {
   border: 1px solid var(--pure-black);
   color: var(--pure-white);
   padding: 0.75em 1.5em;
-  transition: background-color 0.05s ease-in;
+  transition: background-color 0.07s ease-in;
 }
 
 .nav-bar button:hover {
@@ -131,11 +131,11 @@ nav a {
   line-height: 16px;
   letter-spacing: 2;
   text-transform: uppercase;
-  transition: color 0.2s ease-in-out 0.1s;
+  transition: color 0.07s ease-in-out 0.1s;
 }
 
 nav a:hover {
-  color: var(--light-grey);
+  color: gray;
 }
 
 .first-section {
@@ -325,3 +325,94 @@ nav a:hover {
 }
 
 /* footer */
+
+footer {
+  background-color: var(--pure-black);
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10.5rem;
+  color: var(--pure-white);
+}
+
+.footer-section {
+  display: flex;
+}
+
+.footer-nav {
+  margin-left: 6.8125rem;
+}
+
+.footer-nav a {
+  display: block;
+  color: var(--pure-white);
+  margin-bottom: 1.1875rem;
+  transition: color 0.07s ease-in;
+}
+
+.footer-nav a:hover {
+  color: gray;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.83125rem;
+  margin-top: 5.3215rem;
+}
+
+.social-icons a {
+  color: var(--pure-white);
+  display: inline-block;
+  font-size: 20px;
+  transition: background-image 2s ease-in-out;
+}
+
+.social-icons .facebook:hover {
+  background-image: linear-gradient(225deg, #63afdb, #6028f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icons .youtube:hover {
+  background-image: linear-gradient(45deg, #d3205a, #ff5a5a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icons .twitter:hover {
+  background-image: linear-gradient(225deg, #65ffeb, #27718a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icons .pinterest:hover {
+  background-image: linear-gradient(225deg, #f6c683, #de3838);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-icons .instagram:hover {
+  background-image: linear-gradient(26.57deg, #ffc593, #bc7198, #5a77ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer button {
+  width: 100%;
+  text-align: right;
+  border: none;
+  background-color: var(--pure-black);
+  color: var(--pure-white);
+}
+
+footer button:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color: gray;
+  margin-top: 5.3215rem;
+}
