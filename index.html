@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="./index.html">
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="./index.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,8 +12,14 @@
       rel="stylesheet"
     />
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styless.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styless.css" />
     <title>Photosnap project</title>
   </head>
   <body>
@@ -46,16 +52,29 @@
               others.
             </p>
             <button>
-              Get an invite
-              <img src="./assets/btn-arrow-white.svg" alt="Button arrow" />
+              Get an invite<img
+                src="./assets/btn-arrow-white.svg"
+                alt="Button arrow"
+                class="arrows"
+              />
             </button>
           </div>
         </div>
-        <div class="bg-images"></div>
+        <div class="bg-images">
+          <img
+            src="./assets/photo-of-protographer-on-deck.png"
+            alt="Photograph standing on deck"
+          />
+        </div>
       </section>
-      <section>
-        <div class="bg-images"></div>
-        <div>
+      <section class="hero-section">
+        <div class="bg-images">
+          <img
+            src="./assets/photo-of-working-desk.png"
+            alt="Working desk image"
+          />
+        </div>
+        <div class="white-bg-hero">
           <h2>Beautiful stories every time</h2>
           <p>
             We provide design templates to ensure your stories look terrific.
@@ -64,92 +83,197 @@
           </p>
           <button>
             View the stories
-            <img src="./assets/btn-arrow-black.svg" alt="Button arrow" />
+            <img
+              src="./assets/btn-arrow-black.svg"
+              alt="Button arrow"
+              class="arrows"
+            />
           </button>
         </div>
       </section>
-      <section>
-        <div>
-            <h2>Designed for everyone</h2>
-            <p>
-                Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it. 
-            </p>
-            <button>
-              View the stories
-              <img src="./assets/btn-arrow-black.svg" alt="Button arrow" /></div>
-        <div class="bg-images"></div>
+      <section class="hero-section">
+        <div class="white-bg-hero">
+          <h2>Designed for everyone</h2>
+          <p>
+            Photosnap can help you create stories that resonate with your
+            audience. Our tool is designed for photographers of all levels,
+            brands, businesses you name it.
+          </p>
+          <button>
+            View the stories
+            <img
+              src="./assets/btn-arrow-black.svg"
+              alt="Button arrow"
+              class="arrows"
+            />
+          </button>
+        </div>
+        <div class="bg-images">
+          <img
+            src="./assets/photo-of-photographer.png"
+            alt="Photograph using his apparatus"
+          />
+        </div>
       </section>
       <section>
         <article>
-            <ul>
-                <li><a href="#"><div>
-                    <h3>The Mountains</h3>
-                    <p>John Appleseed</p>
-                    <button>Read story <img src="./assets/btn-arrow-white.svg" alt="Button arrow"></button>
-                </div></a></li>
-                <li><a href="#"><div>
-                    <h3>Sunset Cityscapes</h3>
-                    <p>by Benjamin Cruz</p>
-                    <button>Read story <img src="./assets/btn-arrow-white.svg" alt="Button arrow"></button>
-                </div></a></li>
-                <li><a href="#"><div>
-                    <h3>18 Days Voyage</h3>
-                    <p>by Alexei Borodin</p>
-                    <button>Read story <img src="./assets/btn-arrow-white.svg" alt="Button arrow"></button>
-                </div></a></li>
-                <li><a href="#"><div>
-                    <h3>Architecturals</h3>
-                    <p>by Samantha Brooke</p>
-                    <button>Read story <img src="./assets/btn-arrow-white.svg" alt="Button arrow"></button>
-                </div></a></li>
-            </ul>
+          <ul class="hero-slider">
+            <li>
+              <a href="#">
+                <img
+                  src="./assets/mountain-photo.png"
+                  alt="Mountain photography"
+                />
+                <div class="story-author">
+                  <h3>The Mountains</h3>
+                  <p>John Appleseed</p>
+                  <button>
+                    Read story
+                    <img
+                      src="./assets/btn-arrow-white.svg"
+                      alt="Button arrow"
+                      class="arrows"
+                    />
+                  </button>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./assets/city-photo.png" alt="Photography of city" />
+                <div class="story-author">
+                  <h3>Sunset Cityscapes</h3>
+                  <p>by Benjamin Cruz</p>
+                  <button>
+                    Read story
+                    <img
+                      src="./assets/btn-arrow-white.svg"
+                      alt="Button arrow"
+                      class="arrows"
+                    />
+                  </button>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./assets/man-walking-photo.png"
+                  alt="Photo of man who is walking on trail"
+                />
+                <div class="story-author">
+                  <h3>18 Days Voyage</h3>
+                  <p>by Alexei Borodin</p>
+                  <button>
+                    Read story
+                    <img
+                      src="./assets/btn-arrow-white.svg"
+                      alt="Button arrow"
+                      class="arrows"
+                    />
+                  </button>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./assets/photo-of-building.png"
+                  alt="Photohraph of building by Samantha Brooke"
+                />
+                <div class="story-author">
+                  <h3>Architecturals</h3>
+                  <p>by Samantha Brooke</p>
+                  <button>
+                    Read story
+                    <img
+                      src="./assets/btn-arrow-white.svg"
+                      alt="Button arrow"
+                      class="arrows"
+                    />
+                  </button>
+                </div>
+              </a>
+            </li>
+          </ul>
         </article>
       </section>
-      <section>
+      <section class="features-section">
         <div>
-            <div>
-                <img src="./assets/responsiveicon.png" alt="Icon representing responsivnes of websites.">
-            </div>
-            <p>100% Responsive</p>
-            <p>No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.</p>
+          <div class="feature-img">
+            <img
+              src="./assets/responsiveicon.png"
+              alt="Icon representing responsivnes of websites."
+            />
+          </div>
+          <h3>100% Responsive</h3>
+          <p>
+            No matter which the device you’re on, our site is fully responsive
+            and stories look beautiful on any screen.
+          </p>
         </div>
         <div>
-            <div>
-            <img src="./assets/infinityicon.png" alt="Infinity icon representing no upload limits.">
-            </div>
-            <p>No Photo Upload Limit</p>
-            <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.</p>
+          <div class="feature-img infinity">
+            <img
+              src="./assets/infinityicon.png"
+              alt="Infinity icon representing no upload limits."
+            />
+          </div>
+          <h3>No Photo Upload Limit</h3>
+          <p>
+            Our tool has no limits on uploads or bandwidth. Freely upload in
+            bulk and share all of your stories in one go.
+          </p>
         </div>
         <div>
-            <div>
-                <img src="./assets/advertisementicons.png" alt="Possibility to embed any media.">
-            </div>
-            <p>Available to Embed</p>
-            <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. </p>
+          <div class="feature-img">
+            <img
+              src="./assets/advertisementicons.png"
+              alt="Possibility to embed any media."
+            />
+          </div>
+          <h3>Available to Embed</h3>
+          <p>
+            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+            videos, Google Maps, and more.
+          </p>
         </div>
       </section>
     </main>
     <footer>
-        <div>
-            <img src="./assets/logo-photosnap-white.svg" alt="Photosnap logo">
-            <ul class="social-icons">
-                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </div>
-        <ul class="footer-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Stories</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
+      <div>
+        <img src="./assets/logo-photosnap-white.svg" alt="Photosnap logo" />
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
         </ul>
-        <div>
-            <button>Get an invite <img src="./assets/btn-arrow-white.svg" alt="Button arrow"></button>
-            <p>Copyright 2019. All Rights Reserved</p>
-        </div>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+      <div>
+        <button>
+          Get an invite
+          <img src="./assets/btn-arrow-white.svg" alt="Button arrow" />
+        </button>
+        <p>Copyright 2019. All Rights Reserved</p>
+      </div>
     </footer>
   </body>
 </html>

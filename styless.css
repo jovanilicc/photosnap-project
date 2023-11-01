@@ -27,7 +27,7 @@ body {
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0;
-  width: 80%;
+  max-width: 90em;
   margin: 0 auto;
   background-color: var(--pure-white);
 }
@@ -79,6 +79,7 @@ button {
   line-height: 16px;
   letter-spacing: 2;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .nav-bar button {
@@ -86,6 +87,7 @@ button {
   border: 1px solid var(--pure-black);
   color: var(--pure-white);
   padding: 0.75em 1.5em;
+  transition: background-color 0.05s ease-in;
 }
 
 .nav-bar button:hover {
@@ -129,6 +131,7 @@ nav a {
   line-height: 16px;
   letter-spacing: 2;
   text-transform: uppercase;
+  transition: color 0.2s ease-in-out 0.1s;
 }
 
 nav a:hover {
@@ -137,6 +140,7 @@ nav a:hover {
 
 .first-section {
   display: flex;
+  max-height: 40.625em;
 }
 
 .first-section > .bg-color {
@@ -147,11 +151,12 @@ nav a:hover {
 }
 
 .first-section .black-background {
-  padding: 0 7rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
   position: relative;
 }
 
-.first-section .black-background::after {
+.first-section .black-background::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -161,8 +166,162 @@ nav a:hover {
   left: 0;
 }
 
+.black-background p {
+  margin-top: 1.3125rem;
+  margin-bottom: 3rem;
+  color: var(--light-grey);
+}
+
+.black-background > button {
+  border: none;
+  background-color: var(--pure-black);
+  color: var(--pure-white);
+}
+
+.black-background > button:hover {
+  text-decoration: underline;
+}
+
+.arrows {
+  display: inline-block;
+  margin-left: 1.125rem;
+  vertical-align: middle;
+  margin-bottom: 0.125rem;
+}
+
 .first-section > .bg-images {
-  background-image: url(./assets/photo-of-protographer-on-deck.png);
-  object-fit: fill;
   width: 57%;
 }
+
+.first-section > .bg-images > img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.hero-section .white-bg-hero {
+  width: 43%;
+  color: var(--pure-black);
+  text-align: start;
+  padding: 8.4375rem 6.9375rem;
+}
+
+.hero-section .white-bg-hero h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+  text-transform: uppercase;
+}
+
+.hero-section .white-bg-hero p {
+  margin-top: 1.3125rem;
+  margin-bottom: 3rem;
+  color: gray;
+}
+
+.hero-section .white-bg-hero button {
+  border: none;
+  background-color: var(--pure-white);
+  transition: text-decoration;
+}
+
+.hero-section .white-bg-hero button:hover {
+  text-decoration: underline;
+}
+
+.hero-section {
+  display: flex;
+  max-height: 37.5em;
+}
+
+.hero-section .bg-images {
+  width: 57%;
+}
+
+.hero-section img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+/* slider section */
+
+.hero-slider img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.hero-slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.hero-slider li {
+  position: relative;
+  transition: transform 0.1s ease-in 0.1s;
+}
+
+.hero-slider li:hover::before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-image: var(--accent-gradient);
+  position: absolute;
+  bottom: 0;
+}
+
+.hero-slider li:hover {
+  transform: translateY(-1.5rem);
+}
+
+.story-author {
+  position: absolute;
+  bottom: 0;
+  color: var(--pure-white);
+  padding: 0 2.5rem 2.5rem 2.5rem;
+  width: 100%;
+}
+
+.story-author p {
+  border-bottom: solid 1px #ffffff26;
+  padding-bottom: 1rem;
+}
+
+.story-author button {
+  border: none;
+  background-color: transparent;
+  color: var(--pure-white);
+  padding-top: 1.25rem;
+  width: 100%;
+  text-align: left;
+}
+
+.story-author .arrows {
+  float: right;
+}
+
+/* features section */
+
+.features-section {
+  display: flex;
+  text-align: center;
+  padding: 7.5rem 10.3125rem;
+  gap: 1.875rem;
+}
+
+.feature-img {
+  padding-bottom: 3rem;
+}
+
+.feature-img.infinity {
+  padding-top: 1.125rem;
+  padding-bottom: 4.125rem;
+}
+
+.features-section h3 {
+  margin-bottom: 1rem;
+}
+
+/* footer */
