@@ -24,41 +24,42 @@ html {
 body {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
   letter-spacing: 0;
   max-width: 90em;
   margin: 0 auto;
   background-color: var(--pure-white);
+  text-shadow: 0px 0px 0.7px var(--pure-black);
 }
 
 h1 {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 4.17px;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.260625rem;
   text-transform: uppercase;
 }
 
 h2 {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 25px;
+  font-size: 1.5rem;
+  line-height: 1.5625rem;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
 h3 {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
   letter-spacing: 0;
 }
 
 h4 {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: 2;
   text-transform: uppercase;
 }
@@ -240,4 +241,62 @@ footer button:hover {
 footer p {
   color: gray;
   margin-top: 5.3215rem;
+}
+
+/* slider section styling */
+
+.hero-slider img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.hero-slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.hero-slider li {
+  position: relative;
+  transition: transform 0.1s ease-in 0.1s;
+}
+
+.hero-slider li:hover::before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-image: var(--accent-gradient);
+  position: absolute;
+  bottom: 0;
+}
+
+.hero-slider li:hover {
+  transform: translateY(-1.5rem);
+}
+
+.story-author {
+  position: absolute;
+  bottom: 0;
+  color: var(--pure-white);
+  padding: 0 2.5rem 2.5rem 2.5rem;
+  width: 100%;
+}
+
+.story-author p {
+  border-bottom: solid 1px #ffffff26;
+  padding-bottom: 1rem;
+}
+
+.story-author button {
+  border: none;
+  background-color: transparent;
+  color: var(--pure-white);
+  padding-top: 1.25rem;
+  width: 100%;
+  text-align: left;
+}
+
+.story-author .arrows {
+  float: right;
 }
