@@ -1,3 +1,5 @@
+/* top background */
+
 .wrapper-bg {
   display: flex;
   margin-bottom: 7.5rem;
@@ -43,6 +45,169 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* prices section */
+
+.price-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.btn-slide {
+  width: 64px;
+  height: 32px;
+  border-radius: 30px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-grey);
+}
+.btn-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 4px;
+  z-index: 1;
+  background-color: var(--pure-black);
+}
+
+.price-cards {
+  display: flex;
+  margin: 0 10.3125rem 10rem 10.3125rem;
+  gap: 1.875rem;
+  text-align: center;
+  z-index: 0;
+}
+
+.price-cards div {
+  padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+  background-color: var(--light-grey);
+  width: 33%;
+}
+
+.price-cards div > h2 {
+  margin-bottom: 1.125rem;
+}
+
+.price-cards p {
+  margin-bottom: 2.5rem;
+  color: #686666;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.260625rem;
+  text-transform: uppercase;
+  margin-bottom: 0 !important;
+  color: #000 !important;
+}
+
+.price-cards div > button {
+  padding: 0.75rem 0;
+  width: 100%;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 2;
+  text-transform: uppercase;
+  border: 1px solid var(--pure-black);
+  color: var(--pure-white);
+  background-color: var(--pure-black);
+  transition: background-color 0.1s ease-in;
+}
+
+.price-cards div > button:hover {
+  background-color: rgb(181, 180, 180);
+  border: none;
+  color: var(--pure-black);
+}
+
+.highlight {
+  position: relative;
+  padding-top: 7.5rem;
+  padding-bottom: 6.5rem;
+  color: var(--pure-white) !important;
+  background-color: var(--pure-black) !important;
+  z-index: 1;
+}
+
+.highlight.price.white {
+  color: var(--pure-white) !important;
+}
+
+.highlight button {
+  color: var(--pure-black) !important;
+  background-color: var(--light-grey) !important;
+}
+
+.highlight button:hover {
+  color: var(--pure-black);
+  background-color: rgb(181, 180, 180) !important;
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-image: var(--accent-gradient);
+  top: 0;
+  left: 0;
+}
+
+h2:last-of-type {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.260625rem;
+  text-transform: uppercase;
+}
+
+table {
+  text-align: center;
+  margin: 3.5rem auto 10rem auto;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 2;
+  text-transform: uppercase;
+  width: 51%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+td {
+  padding: 1.5rem 0;
+  border-bottom: solid 1px var(--light-grey);
+}
+
+td:first-of-type {
+  text-align: left;
+  padding-left: 1.5rem;
+  width: 40%;
+}
+
+th {
+  border-bottom: solid 1px var(--pure-black);
+  padding: 1.5rem 0;
+}
+
+th:first-of-type {
+  text-align: left;
+  padding-left: 1.5rem;
+  width: 40%;
 }
 
 /* prefooter section */

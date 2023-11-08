@@ -32,7 +32,7 @@ body {
   font-size: 0.9375rem;
   line-height: 1.5625rem;
   letter-spacing: 0;
-  max-width: 90em;
+  max-width: 1440px;
   margin: 0 auto;
   background-color: var(--pure-white);
   text-shadow: 0px 0px 0.7px var(--pure-black);
