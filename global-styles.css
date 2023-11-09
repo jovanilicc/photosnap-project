@@ -26,13 +26,41 @@ html {
   );
 }
 
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 87%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 82%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  html {
+    font-size: 78%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+img {
+  /* display: block; */
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
   letter-spacing: 0;
-  max-width: 1440px;
+  max-width: 90em;
   margin: 0 auto;
   background-color: var(--pure-white);
   text-shadow: 0px 0px 0.7px var(--pure-black);
@@ -110,6 +138,13 @@ button {
   padding: 1rem 4.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 #photosnap-logo {
   display: flex;
   align-items: center;
@@ -128,6 +163,7 @@ nav ul {
   gap: 2.3125rem;
   justify-content: space-evenly;
 }
+
 nav ul li {
   display: flex;
   align-items: center;
@@ -165,6 +201,13 @@ footer {
   color: var(--pure-white);
 }
 
+@media only screen and (max-width: 768px) {
+  footer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 .footer-section {
   display: flex;
 }
@@ -182,6 +225,23 @@ footer {
 
 .footer-nav a:hover {
   color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-section {
+    position: relative;
+    display: flex;
+  }
+
+  .footer-nav {
+    margin: 0;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    display: flex;
+    gap: 1.625rem;
+    font-size: 100%;
+  }
 }
 
 .social-icons {

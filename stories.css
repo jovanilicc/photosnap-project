@@ -2,7 +2,7 @@
 
 .background-section {
   width: 100%;
-  height: 40.625rem;
+  /* height: 40.625rem; */
   background-image: url(./assets/moon-above-the-mountain-range.png);
   background-size: cover;
 }
@@ -18,7 +18,7 @@
 }
 
 .background-section {
-  padding: 7.625rem 58.8125rem 7.625rem 7.625rem;
+  padding: 10rem 7.625rem;
   color: var(--pure-white);
 }
 
@@ -58,7 +58,15 @@
 .hero-slider {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-slider {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-slider li a > img {
+    width: 100%;
+  }
 }
 
 .hero-slider li {

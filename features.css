@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  padding: 10.8125rem 0;
   background-color: var(--pure-black);
   color: var(--pure-white);
 }
@@ -46,6 +46,16 @@
   object-fit: cover;
 }
 
+@media only screen and (max-width: 768px) {
+  .features-bg-text {
+    width: 64%;
+  }
+
+  .img-bg {
+    width: 36%;
+  }
+}
+
 /* features section styling */
 
 .features-section {
@@ -55,6 +65,14 @@
   row-gap: 6.5rem;
   text-align: center;
   padding: 7.5rem 10.3125rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .features-section {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .feature-img {
@@ -80,6 +98,13 @@
   display: flex;
   padding: 4.25rem 10.3125rem;
   position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .prefooter {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .prefooter::before {
