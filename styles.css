@@ -15,18 +15,6 @@
   color: var(--pure-white);
 }
 
-/* sizes < 768px */
-
-@media only screen and (max-width: 768px) {
-  .first-section > .bg-color {
-    width: 64%;
-  }
-
-  .first-section > .bg-images {
-    width: 36%;
-  }
-}
-
 .first-section .black-background {
   padding-left: 7rem;
   padding-right: 6.9375rem;
@@ -70,6 +58,49 @@
   height: 100%;
 }
 
+/* sizes < 768px */
+
+@media only screen and (max-width: 768px) {
+  .first-section > .bg-color {
+    width: 64%;
+  }
+
+  .first-section > .bg-images {
+    width: 36%;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 585px) {
+  .first-section {
+    flex-direction: column-reverse;
+  }
+  .first-section > .bg-color {
+    width: 100%;
+    padding: 4.5rem 0;
+  }
+  .first-section > .bg-images {
+    width: 100%;
+  }
+  .first-section > .bg-images > img {
+    display: block;
+  }
+  .first-section .black-background {
+    padding: 0 1.5rem 0 2.0625rem;
+    /* width: 24.1875rem; */
+  }
+
+  .first-section .black-background::before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 34%;
+    background-image: var(--accent-gradient);
+    top: -4.5rem;
+    left: 2.0625rem;
+  }
+}
+
 /* second and third section styling */
 
 .hero-section .white-bg-hero {
@@ -80,7 +111,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 6.9375rem;
+  /* padding: 0 6.9375rem; */
   padding: 8.4375rem 6.9375rem;
 }
 
@@ -123,13 +154,22 @@
   height: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+/* mobile */
+@media only screen and (max-width: 585px) {
+  section:nth-child(2) {
+    flex-direction: column;
+  }
+  section:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+
   .hero-section .white-bg-hero {
-    width: 64%;
+    width: 100%;
+    padding: 4.5rem 1.5rem 4.5rem 2.0625rem;
   }
 
   .hero-section .bg-images {
-    width: 36%;
+    width: 100%;
   }
 }
 
@@ -152,6 +192,12 @@
   }
   .hero-slider li a > img {
     width: 100%;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 585px) {
+  .hero-slider {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -225,4 +271,11 @@
 
 .features-section h3 {
   margin-bottom: 1rem;
+}
+
+/* mobile */
+@media only screen and (max-width: 585px) {
+  .features-section {
+    padding: 5rem 2rem;
+  }
 }
