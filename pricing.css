@@ -57,6 +57,41 @@
   }
 }
 
+@media only screen and (max-width: 585px) {
+  .wrapper-bg {
+    flex-direction: column-reverse;
+  }
+
+  .features-bg-text {
+    width: 100%;
+    padding: 4.5rem 0;
+  }
+
+  .img-bg {
+    width: 100%;
+    display: block;
+  }
+
+  .img-bg img {
+    display: block;
+  }
+
+  .feat {
+    padding-left: 1.78125rem;
+    padding-right: 1.78125rem;
+  }
+
+  .feat::before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 34%;
+    background-image: var(--accent-gradient);
+    top: -4.5rem;
+    left: 2.0625rem;
+  }
+}
+
 /* prices section */
 
 .price-wrap {
@@ -81,6 +116,7 @@
   align-items: center;
   background-color: var(--light-grey);
 }
+
 .btn-circle {
   width: 24px;
   height: 24px;
@@ -88,6 +124,7 @@
   margin: 4px;
   z-index: 1;
   background-color: var(--pure-black);
+  transition: transform 0.1s ease;
 }
 
 .price-cards {
@@ -221,6 +258,38 @@
   }
 }
 
+@media only screen and (max-width: 585px) {
+  .price-cards .highlight::before {
+    width: 100%;
+    height: 6px;
+  }
+
+  .price-wrap {
+    margin-bottom: 2.5rem;
+  }
+
+  .price-cards {
+    padding: 0 1.75rem 0 1.75rem;
+    margin-bottom: 4rem;
+    gap: 1.5rem;
+  }
+
+  .price-cards div {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    padding: 3.5rem 1.375rem 2.5rem 1.375rem;
+  }
+
+  .price-cards div button {
+    width: 77%;
+  }
+
+  .absolute {
+    position: static;
+  }
+}
+
 .compare {
   text-align: center;
   font-weight: 700;
@@ -230,7 +299,7 @@
   text-transform: uppercase;
 }
 
-table {
+.table-desktop {
   text-align: center;
   margin: 3.5rem auto 10rem auto;
   font-weight: 700;
@@ -244,31 +313,75 @@ table {
 }
 
 @media only screen and (max-width: 768px) {
-  table {
+  .table-desktop {
     width: 89.7%;
   }
 }
 
-td {
+.table-desktop td {
   padding: 1.5rem 0;
   border-bottom: solid 1px var(--light-grey);
 }
 
-td:first-of-type {
+.table-desktop td:first-of-type {
   text-align: left;
   padding-left: 1.5rem;
   width: 40%;
 }
 
-th {
+.table-desktop th {
   border-bottom: solid 1px var(--pure-black);
   padding: 1.5rem 0;
 }
 
-th:first-of-type {
+.table-desktop th:first-of-type {
   text-align: left;
   padding-left: 1.5rem;
   width: 40%;
+}
+
+@media only screen and (max-width: 585px) {
+  .table-desktop {
+    display: none;
+  }
+
+  .compare {
+    display: none;
+  }
+
+  .mobile-table {
+    text-align: left;
+    margin: 1.75rem auto 1.75rem auto;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 2;
+    text-transform: uppercase;
+    width: 85%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  .mobile-table .td-rows td {
+    padding-top: 1.03125rem;
+    padding-bottom: 0.5rem;
+    color: rgba(170, 167, 167, 0.709);
+    font-size: 0.625rem;
+  }
+
+  .mobile-table th {
+    padding-top: 1.46875rem;
+  }
+
+  .mobile-table .first-row-heading {
+    padding-top: 0;
+    padding-bottom: 1.4375rem;
+    border-bottom: solid 1px var(--pure-black);
+  }
+
+  .mobile-table .correct-rows td {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-grey);
+  }
 }
 
 /* prefooter section */
@@ -316,4 +429,29 @@ th:first-of-type {
 
 .prefooter button:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 585px) {
+  .prefooter {
+    flex-direction: column;
+    padding: 4rem 2.03125rem;
+  }
+
+  .prefooter h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .prefooter .btn-pref {
+    justify-content: flex-start;
+  }
+
+  .prefooter::before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 34%;
+    background-image: var(--accent-gradient);
+    /* top: -4.5rem; */
+    left: 2.0625rem;
+  }
 }

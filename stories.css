@@ -52,6 +52,12 @@
   color: rgba(255, 255, 255, 0.75);
 }
 
+@media only screen and (max-width: 585px) {
+  /* .background-section {
+    height: 82vw;
+  } */
+}
+
 /* slider section styling */
 
 .hero-slider img {
@@ -71,6 +77,12 @@
   }
   .hero-slider li a > img {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .hero-slider {
+    grid-template-columns: 1fr;
   }
 }
 
