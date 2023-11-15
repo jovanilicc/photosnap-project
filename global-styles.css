@@ -188,7 +188,7 @@ button {
 }
 
 @media only screen and (min-width: 585px) {
-  aside {
+  #aside-bg {
     display: none;
   }
 }

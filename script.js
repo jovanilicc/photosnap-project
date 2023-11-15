@@ -19,3 +19,25 @@ function changePrice() {
     btnMoved--;
   }
 }
+
+function openNav() {
+  if (navBtn === 0) {
+    navButtonOpen.classList.add("close-btn");
+    navButtonClose.classList.remove("close-btn");
+    navMobile.classList.remove("close-btn");
+    blackNavBgMobile.classList.add("mobile-bg");
+    navBtn++;
+  } else {
+    navButtonOpen.classList.remove("close-btn");
+    navButtonClose.classList.add("close-btn");
+    navMobile.classList.add("close-btn");
+    blackNavBgMobile.classList.remove("mobile-bg");
+    navBtn--;
+  }
+}
+
+function removeBg() {
+  if (navBtn === 0) {
+    blackNavBgMobile.classList.remove("mobile-bg");
+  }
+}
