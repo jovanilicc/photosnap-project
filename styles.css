@@ -20,6 +20,7 @@
   padding-right: 6.9375rem;
   /* width: 24.1875rem; */
   position: relative;
+  overflow: hidden;
 }
 
 .first-section .black-background::before {
@@ -102,24 +103,31 @@
 }
 
 /* second and third section styling */
-
-.hero-section .white-bg-hero {
+.hero-bg {
   width: 43%;
-  color: var(--pure-black);
-  text-align: left;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 8.4375rem 0;
+}
+
+.hero-section .white-bg-hero {
+  color: var(--pure-black);
+  text-align: left;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
   /* padding: 0 6.9375rem; */
-  padding: 8.4375rem 6.9375rem;
+  padding: 0 6.9375rem;
 }
 
 .hero-section .white-bg-hero h2 {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 4.17px;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.260625rem;
   text-transform: uppercase;
 }
 
@@ -163,13 +171,19 @@
     flex-direction: column-reverse;
   }
 
-  .hero-section .white-bg-hero {
+  .hero-section .hero-bg {
     width: 100%;
-    padding: 4.5rem 1.5rem 4.5rem 2.0625rem;
+  }
+
+  .hero-section .white-bg-hero {
+    padding: 0 1.5rem 0 2.0625rem;
   }
 
   .hero-section .bg-images {
     width: 100%;
+  }
+  .hero-section .bg-images img {
+    display: block;
   }
 }
 
