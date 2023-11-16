@@ -203,17 +203,17 @@
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 1rem;
-  letter-spacing: 2;
+  letter-spacing: 2px;
   text-transform: uppercase;
   border: 1px solid var(--pure-black);
   color: var(--pure-white);
   background-color: var(--pure-black);
-  transition: background-color 0.1s ease-in;
+  transition: background-color 0.15s ease-in;
 }
 
 .price-cards div > button:hover {
   background-color: rgb(181, 180, 180);
-  border: none;
+  border: solid 1px var(--light-grey);
   color: var(--pure-black);
 }
 
@@ -224,6 +224,10 @@
   color: var(--pure-white);
   background-color: var(--pure-black);
   z-index: 1;
+}
+
+.price-cards .highlight button:hover {
+  border: none;
 }
 
 .highlight .price {
