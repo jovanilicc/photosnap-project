@@ -203,6 +203,10 @@
   margin-bottom: 1.125rem;
 }
 
+.price-cards p:first-of-type {
+  height: 6rem;
+}
+
 .price-cards p {
   margin-bottom: 2.5rem;
   color: #686666;
@@ -384,6 +388,12 @@
   text-align: left;
   padding-left: 1.5rem;
   width: 40%;
+}
+
+@media only screen and (min-width: 585px) {
+  .mobile-table {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 585px) {
