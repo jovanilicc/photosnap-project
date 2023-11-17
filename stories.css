@@ -18,9 +18,24 @@
   text-decoration: underline;
 }
 
-.background-section {
-  padding: 7.625rem 0 7.625rem 7.625rem;
+.wrapper {
+  padding: 7.625rem 50rem 7.625rem 7.625rem;
   color: var(--pure-white);
+}
+
+.background-section {
+  background-position: 70% 10%;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1150px) {
+  .wrapper {
+    padding: 5.625rem 35rem 5.625rem 5.625rem;
+  }
+  .background-section {
+    background-position: 70% 10%;
+    background-size: cover;
+  }
 }
 
 .background-section h1 {
@@ -29,7 +44,7 @@
 }
 
 .background-img {
-  width: 27%;
+  /* width: 27%; */
 }
 
 .background-img .feature-author {
@@ -52,10 +67,38 @@
   color: rgba(255, 255, 255, 0.75);
 }
 
+@media only screen and (max-width: 960px) {
+  .wrapper {
+    padding: 3.625rem 25.625rem 3.625rem 3.625rem;
+  }
+
+  .background-section {
+    background-position: 70% 10%;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .wrapper {
+    padding-right: 15rem;
+  }
+}
+
 @media only screen and (max-width: 585px) {
   /* .background-section {
     height: 82vw;
   } */
+
+  .wrapper {
+    padding: 1.625rem 1.625rem 3.625rem 1.625rem;
+  }
+
+  .background-section {
+    padding-top: 480px;
+    background-position: 70% 10%;
+    background-size: auto 400px;
+    background-color: #000;
+  }
 }
 
 /* slider section styling */
@@ -69,6 +112,15 @@
 .hero-slider {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 875px) {
+  .hero-slider {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-slider li a > img {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {

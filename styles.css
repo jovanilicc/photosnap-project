@@ -20,7 +20,7 @@
   padding-right: 6.9375rem;
   /* width: 24.1875rem; */
   position: relative;
-  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .first-section .black-background::before {
@@ -59,9 +59,21 @@
   height: 100%;
 }
 
+@media only screen and (max-width: 1000px) {
+  .first-section .black-background {
+    padding-left: 3rem;
+    padding-right: 3.9375rem;
+  }
+}
+
 /* sizes < 768px */
 
 @media only screen and (max-width: 768px) {
+  .first-section .black-background {
+    padding-left: 3rem;
+    padding-right: 3.9375rem;
+  }
+
   .first-section > .bg-color {
     width: 64%;
   }
