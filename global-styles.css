@@ -26,29 +26,6 @@ html {
   );
 }
 
-/* @media only screen and (max-width: 1200px) {
-  html {
-    font-size: 87%;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  html {
-    font-size: 82%;
-  }
-}
-
-@media only screen and (max-width: 860px) {
-  html {
-    font-size: 78%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 75%;
-  }
-} */
 body {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
@@ -58,7 +35,6 @@ body {
   max-width: 90em;
   margin: 0 auto;
   background-color: var(--pure-white);
-  text-shadow: 0px 0px 0.7px var(--pure-black);
 }
 
 h1 {
@@ -375,11 +351,11 @@ footer {
   margin-top: 5.3215rem;
 }
 
-.social-icons a {
+.social-icons a i {
   color: var(--pure-white);
   display: inline-block;
   font-size: 20px;
-  transition: background-image 2s ease-in-out;
+  transition: color 0.1s;
 }
 
 .social-icons .facebook:hover {
