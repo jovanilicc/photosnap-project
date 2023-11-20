@@ -370,27 +370,31 @@ footer {
   background-image: linear-gradient(45deg, #d3205a, #ff5a5a);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* -webkit-text-fill-color: transparent; */
 }
 
 .social-icons .twitter:hover {
   background-image: linear-gradient(225deg, #65ffeb, #27718a);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* -webkit-text-fill-color: transparent; */
 }
 
 .social-icons .pinterest:hover {
   background-image: linear-gradient(225deg, #f6c683, #de3838);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* -webkit-text-fill-color: transparent; */
 }
 .social-icons .instagram:hover {
   background-image: linear-gradient(26.57deg, #ffc593, #bc7198, #5a77ff);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* -webkit-text-fill-color: transparent; */
 }
 
 footer button {
